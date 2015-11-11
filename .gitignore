@@ -4,6 +4,8 @@
 .settings
 *.pyc
 *.pyo
+*.swp
+*.swo
 .bzr
 .bzrignore
 Thumbs.db
