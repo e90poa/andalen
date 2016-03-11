@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Hello world</h1>
+<ul>
+{% for task in tasks %}
+  <li>
+  	<input type="checkbox" name="{{ task.id }}" {% if task.completed %}checked{% endif %}/>
+  	{{ task.name }}  
+
+  	[{% if task.completed %}x{% else %}&nbsp;{% endif %}]
+  </li>
+{% endfor %}
+</ul>
+
+<hr/>
+
+<div class="alert alert-info">
+	<p>Add new task</p>
+<form method="post" action=".">
+	{% csrf_token %}
+	Name: <input type="text" name="name" />
+	<button type="submit">Submit</button>
+</form>
+</div>
+
+<hr/>
+{{ form }}
+
+{% endblock %}

@@ -20,6 +20,8 @@ SITE_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 BASE_DIR = os.path.abspath(os.path.join(SITE_ROOT, ".."))
 
 
+
+
 # Heroku platform settings.
 
 HEROKU_APP_NAME = "andalen"
@@ -45,6 +47,7 @@ ALLOWED_HOSTS = (
     "{HEROKU_APP_NAME}.herokuapp.com".format(
         HEROKU_APP_NAME = HEROKU_APP_NAME,
     ),
+    "127.0.0.1"
 )
 
 
@@ -148,6 +151,8 @@ INSTALLED_APPS = (
     "django.contrib.staticfiles",
     "django.contrib.admin",
     "herokuapp",
+
+    "andalen.apps.tasks",
 )
 
 
