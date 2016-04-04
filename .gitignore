@@ -16,3 +16,4 @@ Thumbs.db
 /.env
 /static
 /media
+node_modules

@@ -1,0 +1,71 @@
+{
+  "name": "andalen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Proprietary",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "babelify": "^6.1.2",
+    "bluebird": "^2.9.25",
+    "bower": "^1.4.1",
+    "browser-sync": "^2.7.1",
+    "browserify": "^10.2.4",
+    "browserify-shim": "^3.8.9",
+    "chart.js": "^1.0.2",
+    "classnames": "^2.1.1",
+    "concat-with-sourcemaps": "^1.0.4",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-filesize": "0.0.6",
+    "gulp-filter": "^2.0.2",
+    "gulp-haml": "^0.1.5",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jshint": "^1.10.0",
+    "gulp-less": "^3.0.3",
+    "gulp-livereload": "^3.8.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-minify-css": "^1.1.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^5.1.6",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-scss-lint": "^0.2.0",
+    "gulp-size": "^1.2.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "immutable": "^3.7.4",
+    "jasmine": "^2.3.1",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.15",
+    "karma-browserify": "^4.4.0",
+    "mocha": "^2.2.5",
+    "moment": "^2.10.3",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "react-router": "^2.0.1",
+    "reflux": "^0.2.7",
+    "shortid": "^2.2.2",
+    "underscore": "^1.8.3",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.3"
+  },
+  "browser": {
+    "jquery": "./te_rma/static_files/js/lib/jquery-1.10.2.min.js",
+    "underscore": "./te_rma/static_files/js/lib/lodash-underscore-2.4.1.js",
+    "sui": "./te_rma/static_files/js/lib/semantic.min.js"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": "./config/shim.js"
+}
