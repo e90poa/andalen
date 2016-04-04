@@ -4,10 +4,9 @@ from django.views import generic
 
 # from andalen.apps import tasks
 #from .views import index
-import views
-import api
+import resources
 
 urlpatterns = patterns("",
-
-    url(r'^$', views.index, name='index'),
+	url(r'^tasks/$', resources.TaskList.as_view(), name='task-list'),
+	url(r'^tasks/(?P<pk>\d+)$', resources.TaskDetail.as_view(), name='task-detail'),
 )

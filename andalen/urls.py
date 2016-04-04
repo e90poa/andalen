@@ -12,7 +12,9 @@ urlpatterns = patterns("",
     # Admin URLs.
     url(r"^admin/", include(admin.site.urls)),
 
+    url(r"^api/", include(tasks.api.urls)),
     url(r"^tasks/", include(tasks.urls)),
+
     
     # Mount all the urls defined in tasks.urls
     #url(r"^tasks/", include(tasks.urls)),
